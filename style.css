@@ -11,42 +11,50 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(50deg,rgb(42, 255, 57),rgb(94, 94, 255)50%,rgb(42, 255, 57));
+    background: linear-gradient(50deg,rgb(255, 42, 216),rgb(94, 94, 255)50%,rgb(255, 138, 42));
 }
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 80%;
-  
+   /* border: 1px solid red; */
+   position: relative;
+      /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39) ; */
+
 }
 .player{
     /* width: 480px; */
     width: 100%;
     height: 400px;
    border-radius: 20px;
-   background: #eaeaea;
-   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425) ;
+   background: #eff7fe;
    display: flex;
    align-items: center;
    justify-content: center;
    flex-direction: column;
    text-transform: capitalize;
    padding: 0.5rem;
+   position: relative;
+   border: 1px solid rgb(1, 0, 0);
 }
 h1{
-    margin-bottom: 20%;
-    background: rgb(112, 112, 255);
-    width: 100%;
+    /* margin-bottom: 20%; */
+    background: rgb(0, 0, 0);
+    width: 40%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.785);
     text-align: center;
     color: white;
     padding: .3rem;
     letter-spacing: 1px;
     border-radius: 5px;
+    position: absolute;
+    top: -8%;
+    left: 50;
 }
 .music-name{
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   margin-bottom: 20px;
   text-align: center;
   color: #444444;
@@ -55,6 +63,7 @@ h1{
 margin: 0;
 color: #848484;
 text-align: center;
+font-size: 1.5rem;
 }
 .player-progress{
     width: 100%;
@@ -74,7 +83,7 @@ margin-top: 36px;
 }
 #player-progress{
 width: 100%;
-height: 5px;
+height: 15px;
 color: #a5aaaf;
 appearance: none;
 
