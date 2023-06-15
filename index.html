@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="player">
+            <h1>Music Player</h1>
+            <audio src="" id="audio-player"></audio>
+            <h2 id="music-name" class="music-name"></h2>
+            <p id="music-author" class="music-author"></p>
+            <div class="player-progress">
+                <div class="progress-value">
+                    <span id="player-current-time">--:--</span>
+                    <span id="player-duration">--:--</span>
+                </div>
+                <progress id="player-progress" ></progress>
+            </div>
+
+            <div class="player-button">
+                <button id="btn-prev" class="btn btn-prev">
+                    <i class="fa fa-step-backward"></i>
+                </button>
+                <button id="btn-play" class="btn btn-play">
+                    <i class="fa fa-play-circle"></i>
+                </button>
+                <!-- <button id="btn-play" class="btn btn-pause">
+                    <i class="fa fa-pause-circle"></i>
+                </button> -->
+                <button id="btn-next" class="btn btn-next">
+                    <i class="fa fa-step-forward"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
